@@ -1,0 +1,69 @@
+.question-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 50px; /* Increased padding for a more spacious feel */
+  border: 1px solid #ddd; /* Softer border for a premium touch */
+  border-radius: 10px; /* Slightly larger radius for a smoother look */
+  background-color: #ffffff; /* Pure white background for a clean, modern look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.question-form:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+.question-form h2 {
+  text-align: center;
+  font-size: 24px; /* Larger font size for a premium feel */
+  font-weight: 600; /* Bolder weight for a modern look */
+  color: #333; /* Softer black for text */
+  margin-bottom: 20px; /* Increased spacing below the heading */
+}
+
+.question-form label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin for cleaner spacing */
+  font-size: 16px; /* Slightly larger text for better readability */
+  color: #333; /* Consistent color */
+}
+
+.question-form input,
+.question-form textarea,
+.question-form select {
+  color: #333; /* Neutral text color */
+  box-sizing: border-box;
+  padding: 12px; /* Increased padding for a more premium feel */
+  width: 100%;
+  margin-bottom: 20px; /* Increased spacing between elements */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Larger radius for a smoother look */
+  background-color: #f7f7f7; /* Light background for input fields */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.question-form input:focus,
+.question-form textarea:focus,
+.question-form select:focus {
+  border-color: #007bff; /* Blue border on focus for better UX */
+  background-color: #fff; /* White background on focus */
+  outline: none; /* Remove default outline */
+}
+
+.question-form button {
+  width: 100%;
+  padding: 12px; /* Increased padding for a premium button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Slightly larger radius */
+  font-size: 18px; /* Larger font size */
+  font-weight: 600; /* Bolder text for emphasis */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.question-form button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  box-shadow: 0 6px 15px rgba(0, 91, 187, 0.2); /* Add subtle shadow on hover */
+}

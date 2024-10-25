@@ -1,0 +1,44 @@
+.card {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer, more modern shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  width: 250px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 12px; /* Rounded corners for a sleek look */
+  overflow: hidden; /* Prevent content overflow */
+  background-color: #fff; /* Clean, minimal background */
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 2px solid #eee; /* Soft separator between image and content */
+  transition: transform 0.3s ease; /* Smooth image scale effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight scaling for a premium hover feel */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.cardContainer {
+  padding: 16px; /* Increased padding for a spacious layout */
+  color: #333; /* Softer text color */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Slightly zoom image for interactivity */
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

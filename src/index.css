@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif; /* Ensure fallback font for compatibility */
+  font-size: 16px; /* Base font size */
+
+  /* Gradient background with animation */
+  background: linear-gradient(
+    -45deg,
+    #8819cd,
+    #d50000,
+    #0d81a1,
+    #007951
+  ); /* Updated gradient colors for a modern look */
+  background-size: 400% 400%;
+  animation: gradient 5s ease-in-out infinite; /* Smoother animation */
+
+  /* Use viewport width for responsive padding */
+  padding: 5vw; /* Increased padding for more whitespace */
+
+  /* Add a subtle shadow for depth */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  /* Adding a soft transition effect */
+  transition: background 0.5s ease-in-out;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    padding: 3vw; /* Less padding on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px; /* Even smaller font size for very small screens */
+    padding: 2vw; /* Minimal padding on very small screens */
+  }
+}

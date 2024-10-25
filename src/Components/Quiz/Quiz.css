@@ -1,0 +1,169 @@
+.container {
+  width: 640px;
+  margin: auto;
+  background: #ffffff; /* Pure white for a clean look */
+  color: #262626;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased gap for more space between elements */
+  border-radius: 12px; /* Slightly larger radius for a modern touch */
+  padding: 50px; /* Uniform padding for a spacious feel */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Slight shadow increase on hover */
+}
+
+.container hr {
+  height: 2px;
+  border: none;
+  background: #e0e0e0; /* Softer divider color */
+}
+
+.container h2 {
+  font-size: 28px; /* Slightly larger font */
+  font-weight: 600; /* Bolder for emphasis */
+  color: #333; /* Softer, neutral black */
+  text-align: center; /* Centered for symmetry */
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 20px; /* More padding for comfort */
+  border: 1px solid #ccc; /* Softer border color */
+  border-radius: 10px; /* Larger radius for smoother edges */
+  margin-bottom: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.container ul li:hover {
+  background: #f4f4f4; /* Subtle background change on hover */
+  transform: scale(1.02); /* Slight enlargement for interactivity */
+}
+
+.container button {
+  margin: auto;
+  width: 260px;
+  height: 65px;
+  background: #553f9a;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600; /* Bolder button text */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container button:hover {
+  background: #452d8b; /* Darker shade on hover */
+  box-shadow: 0 6px 15px rgba(85, 63, 154, 0.3); /* Subtle shadow on hover */
+}
+
+.container .index {
+  margin: auto;
+  font-size: 18px;
+  color: #333; /* Consistent text color */
+}
+
+.container .correct {
+  background: #dffff2;
+  border-color: #00d397;
+}
+
+.container .timeupCorrect {
+  background: #9be1fc;
+  border-color: #007bd3;
+}
+
+.container .wrong {
+  background: #ffebeb;
+  border-color: #ff4a4a;
+}
+
+.container .doughnutChart {
+  height: 300px;
+}
+
+.container .scoreboard,
+.container .nextFinish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .mainMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .title_timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container ul li {
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 100%;
+        max-width: 220px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .container .doughnutChart {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container ul li {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .container button {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .container .doughnutChart {
+        height: 200px;
+    }
+
+    .container .title_timer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
