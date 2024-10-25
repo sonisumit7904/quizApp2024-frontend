@@ -36,7 +36,7 @@ const Head = () => {
 
   // Create axios instance with default config
   const axiosInstance = axios.create({
-    baseURL: "http://quizapplication-production-7fe4.up.railway.app/Quiz", // Add /Quiz to base URL
+    baseURL: "/Quiz", // Add /Quiz to base URL
     headers: {
       "Content-Type": "application/json",
     },
