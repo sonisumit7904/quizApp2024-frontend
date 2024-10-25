@@ -16,9 +16,8 @@ This is a modern, interactive Quiz Application built using the MERN stack (Mongo
 ## Tech Stack
 
 - Frontend: React.js with Vite
-- Backend: Node.js with Express.js
-- Database: MongoDB
-- State Management: Redux
+- Backend: Java with SpringBoot
+- Database: PostgreSQL
 - Styling: CSS with responsive design
 - Charts: Chart.js with react-chartjs-2
 - Routing: React Router
