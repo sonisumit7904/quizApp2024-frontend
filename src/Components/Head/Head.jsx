@@ -36,11 +36,12 @@ const Head = () => {
 
   // Create axios instance with default config
   const axiosInstance = axios.create({
-    baseURL: "/Quiz", // This will use the proxy when using Vite config
+    baseURL: "http://quizapplication-production-7fe4.up.railway.app/Quiz", // Add /Quiz to base URL
     headers: {
       "Content-Type": "application/json",
     },
   });
+
   const createQuiz = async () => {
     try {
       setLoading(true);

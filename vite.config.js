@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const targetUrl = 'http://localhost:8080';
-// const targetUrl = 'http://quizapplication-production-7fe4.up.railway.app';
+const targetUrl = process.env.NODE_ENV === 'production' 
+  ? 'https://quizapplication-production-7fe4.up.railway.app'  // Your Railway backend URL
+  : 'http://localhost:8080';  // Your local backend URL
 
 export default defineConfig({
   plugins: [react()],
@@ -19,5 +20,8 @@ export default defineConfig({
         secure: false,
       }
     }
+  },
+  define: {
+    'process.env.VITE_API_URL': JSON.stringify(targetUrl)
   }
 })
