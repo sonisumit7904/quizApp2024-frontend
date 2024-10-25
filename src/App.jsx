@@ -6,10 +6,9 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import QuestionForm from "./Components/QuestionForm/QuestionForm";
 
-import { data } from "./assets/data";
+// import { data } from "./assets/data";
 
 const App = () => {
-  const dispatch = useDispatch();
 
   const host = "http://localhost:8080/";
   const getAll = "Question/GetQues";
@@ -32,8 +31,6 @@ const App = () => {
   //     "difficultyLevel": "medium",
   //     "topicName": "Computer Network"
   // }
-
-  const getAllUrl = host + getAll;
 
   // Fetch data in useEffect to avoid unnecessary re-renders
 

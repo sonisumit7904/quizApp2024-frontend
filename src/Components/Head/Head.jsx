@@ -7,7 +7,6 @@ import QuizTopics from "./QuizTopics";
 import { useDispatch } from "react-redux";
 
 const Head = () => {
-  const dispatch = useDispatch();
   const history = useHistory();
 
   // State to track the selected card and selected topic
