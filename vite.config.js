@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const targetUrl = 'http://localhost:8080';
-// const targetUrl = 'http://quizapplication-production-7fe4.up.railway.app';
+// const targetUrl = 'http://localhost:8080';
+const targetUrl = 'http://quizapplication-production-7fe4.up.railway.app';
 
 export default defineConfig({
   plugins: [react()],
