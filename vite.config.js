@@ -1,21 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const targetUrl = "http://quizapplication-production-7fe4.up.railway.app";
+const targetUrl = "https://quizapplication-production-7fe4.up.railway.app";
 
 export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/Quiz": {
+      "/api": {
         target: targetUrl,
         changeOrigin: true,
-        secure: false,
-      },
-      "/Question": {
-        target: targetUrl,
-        changeOrigin: true,
-        secure: false,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
