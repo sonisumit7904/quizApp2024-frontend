@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/Quiz/create",
-      "destination": "https://quizutk-production.up.railway.app/Quiz/create"
+      "destination": "https://quiz2-utkarsh.up.railway.app/Quiz/create"
     },{
       "source": "/Quiz/get/:id",
-      "destination": "https://quizutk-production.up.railway.app/Quiz/get/:id"
+      "destination": "https://quiz2-utkarsh.up.railway.app/Quiz/get/:id"
     },{
       "source": "/Quiz/Finish/:id",
-      "destination": "https://quizutk-production.up.railway.app/Quiz/Finish/:id"
+      "destination": "https://quiz2-utkarsh.up.railway.app/Quiz/Finish/:id"
     },{
       "source": "/Question/GetQues",
-      "destination": "https://quizutk-production.up.railway.app/Question/GetQues"
+      "destination": "https://quiz2-utkarsh.up.railway.app/Question/GetQues"
     },{
       "source": "/Question/addQues",
-      "destination": "https://quizutk-production.up.railway.app/Question/addQues"
+      "destination": "https://quiz2-utkarsh.up.railway.app/Question/addQues"
     }
   ]
 }
