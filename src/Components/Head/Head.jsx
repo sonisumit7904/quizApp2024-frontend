@@ -5,7 +5,7 @@ import ImageCard from "./ImageCard";
 import axios from "axios";
 import QuizTopics from "./QuizTopics";
 import { useDispatch } from "react-redux";
-
+  
 const Head = () => {
   const history = useHistory();
 
@@ -17,17 +17,17 @@ const Head = () => {
   const quizSet = [
     {
       difficulty: "Easy",
-      desc: "Time : 10 sec",
+      desc: "Time : 10 sec each",
       questions: 15,
     },
     {
       difficulty: "Medium",
-      desc: "Time : 10 sec",
+      desc: "Time : 10 sec each",
       questions: 10,
     },
     {
       difficulty: "Hard",
-      desc: "Time : 10 sec",
+      desc: "Time : 10 sec each",
       questions: 5,
     },
   ];
